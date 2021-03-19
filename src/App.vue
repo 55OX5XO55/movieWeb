@@ -1,28 +1,39 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div id="app">
+        <div id="tab-bar">
+            <div class="tab-bar-item">首页1</div>
+            <div class="tab-bar-item">首页2</div>
+            <div class="tab-bar-item">首页3</div>
+            <div class="tab-bar-item">首页4</div>
+        </div>
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+    export default {
+        name: 'App',
+        components: {}
+    }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+    /*在css中引用css文件*/
+    @import "./assets/css/base.css";
+
+    #tab-bar {
+        /*流性布局*/
+        display: flex;
+        background-color: #f6f6f6;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        box-shadow: 0px -1px 1px rgba(100, 100, 100, 0.1);
+    }
+
+    .tab-bar-item {
+        flex: 1;
+        text-align: center;
+        height: 49px;
+    }
 </style>
