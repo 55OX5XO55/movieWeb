@@ -1,5 +1,5 @@
 <template>
-    $END$
+    <h2>owl</h2>
 </template>
 
 <script>

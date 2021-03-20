@@ -1,5 +1,5 @@
 <template>
-    $END$
+    <h2>bird</h2>
 </template>
 
 <script>

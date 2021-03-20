@@ -1,5 +1,5 @@
 <template>
-    $END$
+    <h2>elephant</h2>
 </template>
 
 <script>
